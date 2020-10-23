@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Visitor Management System</title>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito&display=swap"
+        rel="stylesheet">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container my-3">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-arrow-circle-right"></i></span>
+        <h3 class=" d-inline " style="margin-left: 350px;">Visitor Management System</h3>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="sideNav-close">&times;</a>
+        <a href="#" id="sideNav-1">About</a>
+        <a href="#" id="sideNav-2">Services</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success m-4" data-toggle="modal" data-target="#modal1">
+            Add
+        </button>
+    </div>
+
+    <!-- SIGN UP MODAL -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- FORM FOR SIGN UP -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT 1 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="stat1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>No. of Visitors</h3>
+                        </div>
+                        <div class="card-body my-4">
+                            <pre><h4>Total Count : <span id="visitorsNo"></span>       <i class="far fa-calendar-check"></i></h4></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="stat1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>No. of Visitors</h3>
+                        </div>
+                        <div class="card-body my-4">
+                            <pre><h4>Total Count : <span id="visitorsNo"></span>       <i class="far fa-clipboard"></i></h4></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="stat1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>No. of Visitors</h3>
+                        </div>
+                        <div class="card-body my-4">
+                            <pre><h4>Total Count : <span id="visitorsNo"></span>       <i class="fas fa-check"></i></h4></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="stat1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>No. of Visitors</h3>
+                        </div>
+                        <div class="card-body my-4">
+                            <pre><h4>Total Count : <span id="visitorsNo"></span>       <i class="far fa-comments"></i></h4></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
